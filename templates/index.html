@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pygame WebSocket</title>
+    <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+</head>
+<body>
+    <canvas id="canvas" width="800" height="600"></canvas>
+    <script>
+        const socket = io();
+
+        socket.on('update', (data) => {
+            console.log(data);
+            // Rendering logic goes here
+        });
+    </script>
+</body>
+</html>
